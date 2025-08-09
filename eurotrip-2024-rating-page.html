@@ -252,7 +252,7 @@
                     <p>Peak: ${item.peak}</p>
                     <p>Pit: ${item.pit}</p>
                     <p>Comments: ${item.comments}</p>
-                    <div class="photo-placeholder" style="${item.photo}"></div>
+                    <div class="photo-placeholder"${item.photo ? ` style='background-image: ${item.photo};'` : ''}></div>
                 `;
                 ratingsList.appendChild(div);
             });
